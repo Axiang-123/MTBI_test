@@ -1,0 +1,263 @@
+interface BigFiveQuestion {
+  id: number;
+  text: string;
+  dimension: 'O' | 'C' | 'E' | 'A' | 'N';
+  direction: 'positive' | 'negative';
+}
+
+export const bigFiveQuickModeQuestions: BigFiveQuestion[] = [
+  // 开放性 (O)
+  { id: 1, text: '我喜欢尝试新的事物和体验', dimension: 'O', direction: 'positive' },
+  { id: 2, text: '我对艺术和美学有着浓厚的兴趣', dimension: 'O', direction: 'positive' },
+  { id: 3, text: '我倾向于传统和保守的观点', dimension: 'O', direction: 'negative' },
+  { id: 4, text: '我喜欢思考抽象的概念和理论', dimension: 'O', direction: 'positive' },
+  { id: 5, text: '我对新思想持开放态度', dimension: 'O', direction: 'positive' },
+  { id: 6, text: '我喜欢按照既定的方式做事', dimension: 'O', direction: 'negative' },
+  { id: 7, text: '我经常有创意的想法', dimension: 'O', direction: 'positive' },
+  { id: 8, text: '我对不同文化和观点感兴趣', dimension: 'O', direction: 'positive' },
+  
+  // 责任心 (C)
+  { id: 9, text: '我是一个有条理的人', dimension: 'C', direction: 'positive' },
+  { id: 10, text: '我经常拖延任务', dimension: 'C', direction: 'negative' },
+  { id: 11, text: '我注重细节和准确性', dimension: 'C', direction: 'positive' },
+  { id: 12, text: '我能够坚持完成困难的任务', dimension: 'C', direction: 'positive' },
+  { id: 13, text: '我是一个可靠的人', dimension: 'C', direction: 'positive' },
+  { id: 14, text: '我做事比较随意，不太注重计划', dimension: 'C', direction: 'negative' },
+  { id: 15, text: '我设定目标并努力实现它们', dimension: 'C', direction: 'positive' },
+  { id: 16, text: '我注重时间管理和效率', dimension: 'C', direction: 'positive' },
+  
+  // 外向性 (E)
+  { id: 17, text: '我喜欢社交活动和与人交往', dimension: 'E', direction: 'positive' },
+  { id: 18, text: '我在人群中感到自在', dimension: 'E', direction: 'positive' },
+  { id: 19, text: '我倾向于安静和独处', dimension: 'E', direction: 'negative' },
+  { id: 20, text: '我喜欢成为注意力的中心', dimension: 'E', direction: 'positive' },
+  { id: 21, text: '我充满活力和热情', dimension: 'E', direction: 'positive' },
+  { id: 22, text: '我在社交场合中感到紧张', dimension: 'E', direction: 'negative' },
+  { id: 23, text: '我喜欢与他人分享我的想法和感受', dimension: 'E', direction: 'positive' },
+  { id: 24, text: '我倾向于保守和内向', dimension: 'E', direction: 'negative' },
+  
+  // 宜人性 (A)
+  { id: 25, text: '我善于理解和关心他人', dimension: 'A', direction: 'positive' },
+  { id: 26, text: '我倾向于合作而非竞争', dimension: 'A', direction: 'positive' },
+  { id: 27, text: '我容易与他人发生冲突', dimension: 'A', direction: 'negative' },
+  { id: 28, text: '我乐于助人', dimension: 'A', direction: 'positive' },
+  { id: 29, text: '我对他人持怀疑态度', dimension: 'A', direction: 'negative' },
+  { id: 30, text: '我善于妥协和解决冲突', dimension: 'A', direction: 'positive' },
+  { id: 31, text: '我关心他人的感受', dimension: 'A', direction: 'positive' },
+  { id: 32, text: '我倾向于自私和自我中心', dimension: 'A', direction: 'negative' },
+  
+  // 神经质 (N)
+  { id: 33, text: '我容易感到焦虑和紧张', dimension: 'N', direction: 'positive' },
+  { id: 34, text: '我情绪稳定，不易受外界影响', dimension: 'N', direction: 'negative' },
+  { id: 35, text: '我经常担心各种事情', dimension: 'N', direction: 'positive' },
+  { id: 36, text: '我能够应对压力和挑战', dimension: 'N', direction: 'negative' },
+  { id: 37, text: '我容易感到沮丧和忧郁', dimension: 'N', direction: 'positive' },
+  { id: 38, text: '我对批评和否定反馈很敏感', dimension: 'N', direction: 'positive' },
+  { id: 39, text: '我保持乐观的态度', dimension: 'N', direction: 'negative' },
+  { id: 40, text: '我情绪波动较大', dimension: 'N', direction: 'positive' },
+];
+
+export const bigFiveCasualModeQuestions: BigFiveQuestion[] = [
+  ...bigFiveQuickModeQuestions,
+  
+  // 开放性 (O) 扩展
+  { id: 41, text: '我喜欢阅读和学习新知识', dimension: 'O', direction: 'positive' },
+  { id: 42, text: '我对科学和技术发展感兴趣', dimension: 'O', direction: 'positive' },
+  { id: 43, text: '我倾向于墨守成规', dimension: 'O', direction: 'negative' },
+  { id: 44, text: '我喜欢探索不同的哲学观点', dimension: 'O', direction: 'positive' },
+  { id: 45, text: '我对改变持开放态度', dimension: 'O', direction: 'positive' },
+  
+  // 责任心 (C) 扩展
+  { id: 46, text: '我注重质量和高标准', dimension: 'C', direction: 'positive' },
+  { id: 47, text: '我做事有始有终', dimension: 'C', direction: 'positive' },
+  { id: 48, text: '我经常迟到或错过截止日期', dimension: 'C', direction: 'negative' },
+  { id: 49, text: '我喜欢制定详细的计划', dimension: 'C', direction: 'positive' },
+  { id: 50, text: '我注重个人责任和义务', dimension: 'C', direction: 'positive' },
+  
+  // 外向性 (E) 扩展
+  { id: 51, text: '我喜欢参加聚会和社交活动', dimension: 'E', direction: 'positive' },
+  { id: 52, text: '我善于与人沟通和交流', dimension: 'E', direction: 'positive' },
+  { id: 53, text: '我更喜欢安静的活动，如阅读或听音乐', dimension: 'E', direction: 'negative' },
+  { id: 54, text: '我容易与陌生人建立关系', dimension: 'E', direction: 'positive' },
+  { id: 55, text: '我喜欢冒险和刺激的活动', dimension: 'E', direction: 'positive' },
+  
+  // 宜人性 (A) 扩展
+  { id: 56, text: '我对他人的需要很敏感', dimension: 'A', direction: 'positive' },
+  { id: 57, text: '我倾向于宽容和理解', dimension: 'A', direction: 'positive' },
+  { id: 58, text: '我容易生气和急躁', dimension: 'A', direction: 'negative' },
+  { id: 59, text: '我愿意帮助他人，即使没有回报', dimension: 'A', direction: 'positive' },
+  { id: 60, text: '我善于团队合作', dimension: 'A', direction: 'positive' },
+  
+  // 神经质 (N) 扩展
+  { id: 61, text: '我对未来感到担忧', dimension: 'N', direction: 'positive' },
+  { id: 62, text: '我能够保持冷静和理性', dimension: 'N', direction: 'negative' },
+  { id: 63, text: '我容易感到压力和疲劳', dimension: 'N', direction: 'positive' },
+  { id: 64, text: '我对生活持积极态度', dimension: 'N', direction: 'negative' },
+  { id: 65, text: '我情绪容易受到外界事件的影响', dimension: 'N', direction: 'positive' },
+  
+  // 额外题目
+  { id: 66, text: '我喜欢尝试不同的食物和菜系', dimension: 'O', direction: 'positive' },
+  { id: 67, text: '我注重个人卫生和整洁', dimension: 'C', direction: 'positive' },
+  { id: 68, text: '我喜欢在团队中担任领导角色', dimension: 'E', direction: 'positive' },
+  { id: 69, text: '我善于倾听他人的意见', dimension: 'A', direction: 'positive' },
+  { id: 70, text: '我对自己的能力有信心', dimension: 'N', direction: 'negative' },
+  { id: 71, text: '我喜欢参观博物馆和艺术展览', dimension: 'O', direction: 'positive' },
+  { id: 72, text: '我能够适应变化的环境', dimension: 'N', direction: 'negative' },
+];
+
+export const bigFiveProfessionalModeQuestions: BigFiveQuestion[] = [
+  ...bigFiveCasualModeQuestions,
+  
+  // 开放性 (O) 深度
+  { id: 73, text: '我对不同的宗教和文化传统感兴趣', dimension: 'O', direction: 'positive' },
+  { id: 74, text: '我喜欢创造性的工作和活动', dimension: 'O', direction: 'positive' },
+  { id: 75, text: '我对科学发现和创新很感兴趣', dimension: 'O', direction: 'positive' },
+  { id: 76, text: '我倾向于遵循传统的价值观和规范', dimension: 'O', direction: 'negative' },
+  { id: 77, text: '我喜欢探索新的思想和理论', dimension: 'O', direction: 'positive' },
+  { id: 78, text: '我对艺术表达形式持开放态度', dimension: 'O', direction: 'positive' },
+  { id: 79, text: '我喜欢挑战传统的思维方式', dimension: 'O', direction: 'positive' },
+  { id: 80, text: '我对学习新语言或技能感兴趣', dimension: 'O', direction: 'positive' },
+  
+  // 责任心 (C) 深度
+  { id: 81, text: '我注重工作和生活的平衡', dimension: 'C', direction: 'positive' },
+  { id: 82, text: '我能够有效地管理时间和资源', dimension: 'C', direction: 'positive' },
+  { id: 83, text: '我对自己的行为负责', dimension: 'C', direction: 'positive' },
+  { id: 84, text: '我喜欢设定长期目标并为之努力', dimension: 'C', direction: 'positive' },
+  { id: 85, text: '我注重细节和精确度', dimension: 'C', direction: 'positive' },
+  { id: 86, text: '我能够在压力下保持专注', dimension: 'C', direction: 'positive' },
+  { id: 87, text: '我对自己的表现有高标准', dimension: 'C', direction: 'positive' },
+  { id: 88, text: '我善于规划和组织', dimension: 'C', direction: 'positive' },
+  
+  // 外向性 (E) 深度
+  { id: 89, text: '我喜欢与人争论和讨论', dimension: 'E', direction: 'positive' },
+  { id: 90, text: '我在社交场合中感到精力充沛', dimension: 'E', direction: 'positive' },
+  { id: 91, text: '我喜欢表达自己的观点和想法', dimension: 'E', direction: 'positive' },
+  { id: 92, text: '我倾向于主动与他人建立联系', dimension: 'E', direction: 'positive' },
+  { id: 93, text: '我喜欢参与团队活动和项目', dimension: 'E', direction: 'positive' },
+  { id: 94, text: '我在陌生人面前感到自在', dimension: 'E', direction: 'positive' },
+  { id: 95, text: '我喜欢在公共场合发言', dimension: 'E', direction: 'positive' },
+  { id: 96, text: '我倾向于乐观和积极', dimension: 'E', direction: 'positive' },
+  
+  // 宜人性 (A) 深度
+  { id: 97, text: '我善于理解他人的观点', dimension: 'A', direction: 'positive' },
+  { id: 98, text: '我倾向于信任他人', dimension: 'A', direction: 'positive' },
+  { id: 99, text: '我善于解决冲突和分歧', dimension: 'A', direction: 'positive' },
+  { id: 100, text: '我对他人的成功感到高兴', dimension: 'A', direction: 'positive' },
+  { id: 101, text: '我倾向于慷慨和大方', dimension: 'A', direction: 'positive' },
+  { id: 102, text: '我善于团队合作', dimension: 'A', direction: 'positive' },
+  { id: 103, text: '我对弱势群体表示同情', dimension: 'A', direction: 'positive' },
+  { id: 104, text: '我倾向于避免冲突和争论', dimension: 'A', direction: 'positive' },
+  
+  // 神经质 (N) 深度
+  { id: 105, text: '我容易感到不安和紧张', dimension: 'N', direction: 'positive' },
+  { id: 106, text: '我对批评和否定反馈很敏感', dimension: 'N', direction: 'positive' },
+  { id: 107, text: '我经常担心自己的健康', dimension: 'N', direction: 'positive' },
+  { id: 108, text: '我能够应对生活中的挑战', dimension: 'N', direction: 'negative' },
+  { id: 109, text: '我情绪容易波动', dimension: 'N', direction: 'positive' },
+  { id: 110, text: '我对未来感到不确定和担忧', dimension: 'N', direction: 'positive' },
+  { id: 111, text: '我能够保持情绪稳定', dimension: 'N', direction: 'negative' },
+  { id: 112, text: '我容易感到压力和焦虑', dimension: 'N', direction: 'positive' },
+  
+  // 更多深度题目 (继续添加到200题)
+  { id: 113, text: '我喜欢尝试新的工作方法和流程', dimension: 'O', direction: 'positive' },
+  { id: 114, text: '我注重个人成长和自我提升', dimension: 'C', direction: 'positive' },
+  { id: 115, text: '我喜欢参加社交聚会和活动', dimension: 'E', direction: 'positive' },
+  { id: 116, text: '我善于与不同背景的人相处', dimension: 'A', direction: 'positive' },
+  { id: 117, text: '我对自己的情绪有很好的控制', dimension: 'N', direction: 'negative' },
+  { id: 118, text: '我对艺术和文学有浓厚的兴趣', dimension: 'O', direction: 'positive' },
+  { id: 119, text: '我是一个有条理和系统的人', dimension: 'C', direction: 'positive' },
+  { id: 120, text: '我喜欢与他人合作完成任务', dimension: 'E', direction: 'positive' },
+  { id: 121, text: '我对他人的需要很敏感', dimension: 'A', direction: 'positive' },
+  { id: 122, text: '我能够在压力下保持冷静', dimension: 'N', direction: 'negative' },
+  { id: 123, text: '我喜欢探索不同的文化和传统', dimension: 'O', direction: 'positive' },
+  { id: 124, text: '我注重工作质量和效率', dimension: 'C', direction: 'positive' },
+  { id: 125, text: '我善于表达自己的情感和想法', dimension: 'E', direction: 'positive' },
+  { id: 126, text: '我倾向于宽容和理解', dimension: 'A', direction: 'positive' },
+  { id: 127, text: '我对生活持乐观态度', dimension: 'N', direction: 'negative' },
+  { id: 128, text: '我喜欢学习新的知识和技能', dimension: 'O', direction: 'positive' },
+  { id: 129, text: '我能够设定并实现目标', dimension: 'C', direction: 'positive' },
+  { id: 130, text: '我在社交场合中感到自信', dimension: 'E', direction: 'positive' },
+  { id: 131, text: '我善于倾听他人的意见', dimension: 'A', direction: 'positive' },
+  { id: 132, text: '我能够应对生活中的挫折', dimension: 'N', direction: 'negative' },
+  { id: 133, text: '我对科学和技术发展感兴趣', dimension: 'O', direction: 'positive' },
+  { id: 134, text: '我注重细节和精确度', dimension: 'C', direction: 'positive' },
+  { id: 135, text: '我喜欢与人交流和分享', dimension: 'E', direction: 'positive' },
+  { id: 136, text: '我倾向于帮助他人', dimension: 'A', direction: 'positive' },
+  { id: 137, text: '我情绪稳定，不易受外界影响', dimension: 'N', direction: 'negative' },
+  { id: 138, text: '我喜欢创造性的思考和表达', dimension: 'O', direction: 'positive' },
+  { id: 139, text: '我是一个可靠和负责任的人', dimension: 'C', direction: 'positive' },
+  { id: 140, text: '我喜欢参加团队活动', dimension: 'E', direction: 'positive' },
+  { id: 141, text: '我对他人持友善态度', dimension: 'A', direction: 'positive' },
+  { id: 142, text: '我能够保持情绪平衡', dimension: 'N', direction: 'negative' },
+  { id: 143, text: '我对不同的观点持开放态度', dimension: 'O', direction: 'positive' },
+  { id: 144, text: '我善于规划和组织', dimension: 'C', direction: 'positive' },
+  { id: 145, text: '我喜欢与人建立深厚的关系', dimension: 'E', direction: 'positive' },
+  { id: 146, text: '我倾向于合作而非竞争', dimension: 'A', direction: 'positive' },
+  { id: 147, text: '我对未来充满希望', dimension: 'N', direction: 'negative' },
+  { id: 148, text: '我喜欢尝试新的食物和体验', dimension: 'O', direction: 'positive' },
+  { id: 149, text: '我注重个人卫生和整洁', dimension: 'C', direction: 'positive' },
+  { id: 150, text: '我在社交场合中感到自在', dimension: 'E', direction: 'positive' },
+  { id: 151, text: '我善于解决冲突', dimension: 'A', direction: 'positive' },
+  { id: 152, text: '我能够应对压力和挑战', dimension: 'N', direction: 'negative' },
+  { id: 153, text: '我对艺术和美学有鉴赏力', dimension: 'O', direction: 'positive' },
+  { id: 154, text: '我能够坚持完成困难的任务', dimension: 'C', direction: 'positive' },
+  { id: 155, text: '我喜欢与人交流和互动', dimension: 'E', direction: 'positive' },
+  { id: 156, text: '我对他人的感受很敏感', dimension: 'A', direction: 'positive' },
+  { id: 157, text: '我情绪稳定，不易波动', dimension: 'N', direction: 'negative' },
+  { id: 158, text: '我喜欢阅读和学习新知识', dimension: 'O', direction: 'positive' },
+  { id: 159, text: '我注重时间管理和效率', dimension: 'C', direction: 'positive' },
+  { id: 160, text: '我喜欢成为团队的一员', dimension: 'E', direction: 'positive' },
+  { id: 161, text: '我倾向于宽容和理解', dimension: 'A', direction: 'positive' },
+  { id: 162, text: '我对自己的能力有信心', dimension: 'N', direction: 'negative' },
+  { id: 163, text: '我对不同的文化和传统感兴趣', dimension: 'O', direction: 'positive' },
+  { id: 164, text: '我设定目标并努力实现它们', dimension: 'C', direction: 'positive' },
+  { id: 165, text: '我喜欢与人分享我的想法', dimension: 'E', direction: 'positive' },
+  { id: 166, text: '我善于倾听他人的问题', dimension: 'A', direction: 'positive' },
+  { id: 167, text: '我能够保持积极的态度', dimension: 'N', direction: 'negative' },
+  { id: 168, text: '我喜欢探索新的思想和理论', dimension: 'O', direction: 'positive' },
+  { id: 169, text: '我注重工作和生活的平衡', dimension: 'C', direction: 'positive' },
+  { id: 170, text: '我在社交场合中感到精力充沛', dimension: 'E', direction: 'positive' },
+  { id: 171, text: '我倾向于帮助他人，即使没有回报', dimension: 'A', direction: 'positive' },
+  { id: 172, text: '我能够应对生活中的变化', dimension: 'N', direction: 'negative' },
+  { id: 173, text: '我对科学发现和创新感兴趣', dimension: 'O', direction: 'positive' },
+  { id: 174, text: '我是一个有条理的人', dimension: 'C', direction: 'positive' },
+  { id: 175, text: '我喜欢与人建立新的关系', dimension: 'E', direction: 'positive' },
+  { id: 176, text: '我对他人持友善态度', dimension: 'A', direction: 'positive' },
+  { id: 177, text: '我情绪稳定，不易受外界影响', dimension: 'N', direction: 'negative' },
+  { id: 178, text: '我喜欢尝试新的工作方法', dimension: 'O', direction: 'positive' },
+  { id: 179, text: '我注重细节和精确度', dimension: 'C', direction: 'positive' },
+  { id: 180, text: '我喜欢参加社交活动', dimension: 'E', direction: 'positive' },
+  { id: 181, text: '我善于理解他人的观点', dimension: 'A', direction: 'positive' },
+  { id: 182, text: '我能够保持冷静和理性', dimension: 'N', direction: 'negative' },
+  { id: 183, text: '我对艺术和文学有浓厚的兴趣', dimension: 'O', direction: 'positive' },
+  { id: 184, text: '我能够有效地管理时间', dimension: 'C', direction: 'positive' },
+  { id: 185, text: '我善于与人沟通和交流', dimension: 'E', direction: 'positive' },
+  { id: 186, text: '我倾向于合作而非竞争', dimension: 'A', direction: 'positive' },
+  { id: 187, text: '我对生活持乐观态度', dimension: 'N', direction: 'negative' },
+  { id: 188, text: '我喜欢学习新的知识和技能', dimension: 'O', direction: 'positive' },
+  { id: 189, text: '我注重个人责任和义务', dimension: 'C', direction: 'positive' },
+  { id: 190, text: '我在社交场合中感到自信', dimension: 'E', direction: 'positive' },
+  { id: 191, text: '我对他人的需要很敏感', dimension: 'A', direction: 'positive' },
+  { id: 192, text: '我能够应对生活中的挫折', dimension: 'N', direction: 'negative' },
+  { id: 193, text: '我对不同的观点持开放态度', dimension: 'O', direction: 'positive' },
+  { id: 194, text: '我善于规划和组织', dimension: 'C', direction: 'positive' },
+  { id: 195, text: '我喜欢与人交流和分享', dimension: 'E', direction: 'positive' },
+  { id: 196, text: '我倾向于帮助他人', dimension: 'A', direction: 'positive' },
+  { id: 197, text: '我情绪稳定，不易波动', dimension: 'N', direction: 'negative' },
+  { id: 198, text: '我喜欢创造性的思考和表达', dimension: 'O', direction: 'positive' },
+  { id: 199, text: '我能够设定并实现目标', dimension: 'C', direction: 'positive' },
+  { id: 200, text: '我在社交场合中感到自在', dimension: 'E', direction: 'positive' },
+];
+
+export const getBigFiveQuestionsByMode = (mode: 'quick' | 'casual' | 'professional') => {
+  switch (mode) {
+    case 'quick':
+      return bigFiveQuickModeQuestions;
+    case 'casual':
+      return bigFiveCasualModeQuestions;
+    case 'professional':
+      return bigFiveProfessionalModeQuestions;
+    default:
+      return bigFiveQuickModeQuestions;
+  }
+};
