@@ -59,7 +59,7 @@ export const calculateBigFive = (mode: 'quick' | 'casual' | 'professional', answ
 };
 
 // 根据测试模式和维度计算百分比得分
-function calculatePercentage(rawScore: number, mode: 'quick' | 'casual' | 'professional', dimension: 'O' | 'C' | 'E' | 'A' | 'N') {
+function calculatePercentage(rawScore: number, mode: 'quick' | 'casual' | 'professional', _dimension: 'O' | 'C' | 'E' | 'A' | 'N') {
   // 每个模式下每个维度的题目数量
   const questionCounts = {
     quick: 8, // 每个维度8题
